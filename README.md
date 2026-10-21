@@ -1,37 +1,55 @@
-# E-Portfolio
+# College E-Portfolio
 
-A responsive, accessible starter e-portfolio built with plain HTML, CSS, and JavaScript. No build tools or package installation are required.
+A responsive college e-portfolio built with plain HTML, CSS, and JavaScript. It is designed to document education, coursework, skills, and learning reflections. There is no build process or package installation required.
 
 ## Preview locally
 
-1. Clone this repository:
+1. Clone the repository:
    `git clone https://github.com/yvngdagger30-maker/tallnakeddzebra.git`
-2. Open the folder in VS Code or your preferred editor.
-3. Open `index.html` in a browser. For a more convenient development workflow, use the VS Code Live Server extension.
+2. Open the folder in VS Code or another code editor.
+3. Open `index.html` in a browser. You can also use the VS Code Live Server extension for a local preview.
 
-## Personalize before publishing
+## Personalize the portfolio
 
-- Replace **Your Name**, the monogram initials, education, interests, location, and introduction in `index.html`.
-- Replace the three sample project cards with real work, images, and project links.
-- Update the email and LinkedIn URL in the contact section.
-- Add a resume PDF to the repository if you want to share one, then link it from the Resume section.
-- Update the page title and description in the `<head>` section.
-- Adjust colors and layout in `styles.css`.
+Before sharing the site, edit `index.html`:
+
+- Replace **Your Name** and the **YN** initials with your name and initials.
+- Replace the sample college, degree/program, and expected graduation year with accurate information.
+- Rewrite the About section in your own voice.
+- Replace the sample coursework cards with real assignments. Include a short description of the goal, your contribution, the result, and what you learned.
+- Update the skills list to reflect skills you can demonstrate.
+- Replace the sample email and LinkedIn link, or remove those links if you do not want to publish contact information.
+- Add links to public project files or presentations only when you have permission to share them.
+
+Do not publish private information, confidential class materials, grades, or another person's work without permission. Make it clear which items are examples and which are completed projects.
 
 ## Publish with GitHub Pages
 
-1. Open the repository on GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and `/(root)`, then save.
-5. Wait for GitHub Pages to publish the site. The published URL will appear in the Pages settings.
+1. Open [this repository's Pages settings](https://github.com/yvngdagger30-maker/tallnakeddzebra/settings/pages).
+2. Under **Build and deployment**, set the source to **Deploy from a branch**.
+3. Select the `main` branch and the `/(root)` folder.
+4. Click **Save**.
+5. Wait for the deployment to complete. GitHub Pages will display the published site URL in the Pages settings.
+
+The expected project URL is:
+`https://yvngdagger30-maker.github.io/tallnakeddzebra/`
+
+If it does not load immediately, check the Pages settings and wait a few minutes for the first deployment.
 
 ## Files
 
-- `index.html` — page content and sections
-- `styles.css` — responsive design and styling
+- `index.html` — content and portfolio sections
+- `styles.css` — layout, colors, typography, and responsive styling
 - `script.js` — mobile navigation and current footer year
 
-## Notes
+## Updating later
 
-This is a starter template. Replace placeholder content with information you are comfortable making public. Do not publish private contact details or confidential coursework.
+After editing files locally, run:
+
+```bash
+git add .
+git commit -m "Update e-portfolio"
+git push
+```
+
+GitHub Pages will publish the updated site after the changes are pushed to the configured branch.
