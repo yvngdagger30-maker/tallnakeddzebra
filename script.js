@@ -36,16 +36,14 @@ function updateMotion(){document.documentElement.classList.toggle('no-motion',re
 $('#motion-toggle').addEventListener('click',()=>{reduce=!reduce;try{localStorage.setItem('dg-reduce-motion',String(reduce));}catch{}updateMotion();});
 updateMotion();
 
-const characters=[
- {name:'Jason Voorhees',film:'FRIDAY THE 13TH',description:"THE MASK / ANONYMITY & ACCOUNTABILITY. In this interpretation, Jason's mask becomes a metaphor for the identities people hide behind online. The empty eyes ask what happens to empathy when a person becomes an anonymous profile. The character is the reference; online dehumanization is the subject."},
- {name:'Freddy Krueger',film:'A NIGHTMARE ON ELM STREET',description:'THE DREAM / AN ALWAYS-ON CULTURE. This interpretation connects the invaded dream to the pressure of notifications, work, and performance that follows us into rest. Freddy becomes a visual metaphor for anxiety that refuses to clock out. Where does a person go when even their quiet moments feel occupied?'},
- {name:'Michael Myers',film:'HALLOWEEN',description:'THE SHAPE / NORMALIZED INDIFFERENCE. An unreadable face becomes a metaphor for looking at suffering without responding. This study asks how repeated exposure to cruelty can turn shock into routine. The blank mask reflects the distance between seeing harm and choosing to act.'},
- {name:'The Creeper',film:'JEEPERS CREEPERS',description:'THE HUNGER / EXTRACTION WITHOUT END. The Creeper becomes a metaphor for systems that treat people and the planet as resources to consume. A familiar coat conceals something predatory: an image of exploitation made ordinary. What survives when taking becomes the only purpose?'}
-];
-document.querySelectorAll('.character').forEach(button=>button.addEventListener('click',()=>{
- const i=Number(button.dataset.character),c=characters[i];
- document.querySelectorAll('.character').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});
- $('#character-film').textContent=c.film+' / FAN ART INTERPRETATION';$('#character-name').textContent=c.name;$('#character-description').textContent=c.description;
- $('#icons-theater').style.setProperty('--character-position',`${12.5+i*25}%`);
- const slash=$('.slash-mark');slash.classList.remove('cut');void slash.offsetWidth;slash.classList.add('cut');
-}));
+const specimenButtons=[...document.querySelectorAll('.specimen-flip')];
+function setSpecimen(button,open){
+ button.setAttribute('aria-expanded',String(open));
+ button.querySelector('.specimen-back').setAttribute('aria-hidden',String(!open));
+ button.querySelector('.specimen-front').setAttribute('aria-hidden',String(open));
+ button.setAttribute('aria-label',(open?'Show portrait of ':'Reveal the meaning of ')+button.querySelector('.specimen-front strong').textContent);
+}
+function syncReveal(){const allOpen=specimenButtons.every(b=>b.getAttribute('aria-expanded')==='true');$('#reveal-all').setAttribute('aria-pressed',String(allOpen));$('#reveal-all').textContent=allOpen?'Return to portraits ↶':'Reveal every meaning +';}
+specimenButtons.forEach(button=>button.addEventListener('click',()=>{setSpecimen(button,button.getAttribute('aria-expanded')!=='true');syncReveal();}));
+$('#reveal-all').addEventListener('click',()=>{const open=$('#reveal-all').getAttribute('aria-pressed')!=='true';specimenButtons.forEach(b=>setSpecimen(b,open));syncReveal();});
+$('#uv-toggle').addEventListener('click',()=>{const on=$('#uv-toggle').getAttribute('aria-pressed')!=='true';$('#uv-toggle').setAttribute('aria-pressed',String(on));$('#uv-toggle').textContent='Ultraviolet: '+(on?'on':'off')+' ◉';$('#icons').classList.toggle('ultraviolet',on);});

@@ -25,3 +25,6 @@ Fonts use Google Fonts with local system fallbacks. No analytics, autoplay audio
 
 ## Nightmare Icons
 Unofficial generative fan-art ensemble of Jason Voorhees, Freddy Krueger, Michael Myers, and the Creeper, with interactive character interpretations and reduced-motion-aware slasher accent. These characters are attributed to their respective properties and are not presented as Don Gray original character designs.
+
+## Nightmare Icons: Rewired
+Four individually generated reinterpretations: Jason / The Anonymous (fiber-optic mask, anonymity); Freddy / The Insomniac (clock-hand claws, burnout); Michael / The Bystander (mirror eye, desensitization); Creeper / The Consumer (e-waste coat, extraction). Built-in image generation used, cinematic practical-effects portrait prompts, charcoal/ivory/acid green, no gore. Assets saved in assets/{jason,freddy,myers,creeper}-rewired.webp. Cards flip to reveal social meaning, have expandable design notes, a reveal-all control, and ultraviolet color mode. Existing reduced-motion control disables flip transitions.
