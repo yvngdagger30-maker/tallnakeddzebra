@@ -28,3 +28,5 @@ Unofficial generative fan-art ensemble of Jason Voorhees, Freddy Krueger, Michae
 
 ## Nightmare Icons: Rewired
 Four individually generated reinterpretations: Jason / The Anonymous (fiber-optic mask, anonymity); Freddy / The Insomniac (clock-hand claws, burnout); Michael / The Bystander (mirror eye, desensitization); Creeper / The Consumer (e-waste coat, extraction). Built-in image generation used, cinematic practical-effects portrait prompts, charcoal/ivory/acid green, no gore. Assets saved in assets/{jason,freddy,myers,creeper}-rewired.webp. Cards flip to reveal social meaning, have expandable design notes, a reveal-all control, and ultraviolet color mode. Existing reduced-motion control disables flip transitions.
+
+The Rewired card narratives are fictional vignettes inspired by the generated portraits, not canonical film storylines. Each design note describes visible costume and material details.
