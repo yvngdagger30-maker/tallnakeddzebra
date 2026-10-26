@@ -30,3 +30,10 @@ Unofficial generative fan-art ensemble of Jason Voorhees, Freddy Krueger, Michae
 Four individually generated reinterpretations: Jason / The Anonymous (fiber-optic mask, anonymity); Freddy / The Insomniac (clock-hand claws, burnout); Michael / The Bystander (mirror eye, desensitization); Creeper / The Consumer (e-waste coat, extraction). Built-in image generation used, cinematic practical-effects portrait prompts, charcoal/ivory/acid green, no gore. Assets saved in assets/{jason,freddy,myers,creeper}-rewired.webp. Cards flip to reveal social meaning, have expandable design notes, a reveal-all control, and ultraviolet color mode. Existing reduced-motion control disables flip transitions.
 
 The Rewired card narratives are fictional vignettes inspired by the generated portraits, not canonical film storylines. Each design note describes visible costume and material details.
+
+## Last Light / haunted portfolio update
+Animated breathing portraits trigger a brief full-screen character lunge when opened; Escape dismisses it. Footer controls disable scares or enable a synthesized sound sting (off by default). Reduced-motion mode suppresses jump scares and decorative motion. Blood drips and SVG cobwebs are pointer-transparent screen overlays.
+
+Projects contains Last Light: a canvas runner using the existing four character portraits as playable characters and pursuers, with graves, hanging chains, collectible signals, double jumps, duck, pause/resume, victory at 13 signals, and local best score. Keyboard: Space/Up, Down, P. Touch buttons are included. No remote scores or tracking.
+
+Artist asset: assets/artist-alter-ego.webp. Generated with the built-in image tool using a fictional adult male horror-artist portrait brief: cracked ivory mask, dark hoodie, abandoned studio, crimson and green lighting, cobwebs, no text. An invented alter ego, not an actual likeness.
