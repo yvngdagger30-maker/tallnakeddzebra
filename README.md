@@ -37,3 +37,8 @@ Animated breathing portraits trigger a brief full-screen character lunge when op
 Projects contains Last Light: a canvas runner using the existing four character portraits as playable characters and pursuers, with graves, hanging chains, collectible signals, double jumps, duck, pause/resume, victory at 13 signals, and local best score. Keyboard: Space/Up, Down, P. Touch buttons are included. No remote scores or tracking.
 
 Artist asset: assets/artist-alter-ego.webp. Generated with the built-in image tool using a fictional adult male horror-artist portrait brief: cracked ivory mask, dark hoodie, abandoned studio, crimson and green lighting, cobwebs, no text. An invented alter ego, not an actual likeness.
+
+## Pixel Inferno upgrade
+All four in-game characters are now native canvas pixel sprites with animated feet and individual masks, hats, weapons, and silhouettes. The inferno has scrolling rock layers, lava currents, flames and rising embers. Space/Up jumps (second press double jumps), Down ducks, P pauses/resumes; touch buttons remain available.
+
+Desktop pointer hover triggers each Nightmare Icons portrait after 180 ms. Jason uses a water-toned rise and machete sweep, Freddy a dream warp and claw overlay, Myers a monochrome stepped approach, Creeper a wing-shadow dive. Per-character cooldown prevents loops. Tap and keyboard click still reveal the meaning and trigger scares. Visible blood animation now stretches drips and drops them down the screen. Reduced-motion settings disable decorative motion and scares.
