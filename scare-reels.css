@@ -1,0 +1,5 @@
+#scare-overlay[data-reel]>img,#scare-overlay[data-reel]>strong{display:none!important}
+.scare-reel{position:absolute;inset:0;background:#020304;overflow:hidden}
+#scare-overlay .scare-reel-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:none;transform:none;animation:none}
+#scare-overlay[data-reel]:after{background:none;box-shadow:inset 0 0 80px #0008}
+#scare-overlay[data-reel] #dismiss-scare{min-width:48px;min-height:48px;top:max(16px,env(safe-area-inset-top));right:max(16px,env(safe-area-inset-right))}
