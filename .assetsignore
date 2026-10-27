@@ -5,3 +5,5 @@ wrangler.jsonc
 package.json
 package-lock.json
 *.test.*
+
+production

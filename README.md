@@ -1,3 +1,7 @@
+## Unpublished checkpoint — silent animated encounters and three-hit game health
+
+The user requested saving and finishing later. See `production/ANIMATION-CHECKPOINT.md` for implemented changes, validation, remaining visual review and exact publication steps. This branch is not the current live release. All new jumpscares are silent; no audio control or playback script is loaded.
+
 ## Game pacing and artwork update
 
 Police start well behind the character. Starting speed is 190 px/s (previously 292); speed caps at 255. Encounters use one spaced queue instead of overlapping independent spawners. Jump airtime is about 1.24 seconds before a second jump; attacks last 0.82 seconds, with a 0.53-second active window, increased reach and a 0.24-second input buffer. The simulation uses fixed 120 Hz updates. Feet are registered per sprite frame; run poses use a ping-pong loop with short crossfades, plus eased crouch and landing response.

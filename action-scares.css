@@ -1,0 +1,7 @@
+#scare-overlay[data-action]>img{display:none!important}
+.action-scene,.action-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;background:#020506}
+#scare-overlay[data-action]:after{display:none}
+#scare-overlay[data-action]>strong{position:absolute;left:16px;right:16px;bottom:max(7vh,28px);margin:0;align-self:auto;text-align:center;font:500 clamp(16px,2.4vw,31px)/1.5 var(--mono,monospace);letter-spacing:.13em;text-shadow:0 2px 20px #000;background:none;animation:none;opacity:0;transition:opacity .2s;z-index:2;pointer-events:none}
+#scare-overlay[data-action][data-phase=aftermath]>strong{opacity:1}
+#scare-overlay[data-action] #dismiss-scare{top:max(16px,env(safe-area-inset-top));right:max(16px,env(safe-area-inset-right));min-height:48px;padding:12px 16px;background:#070a0fba;border-color:#8b969077;backdrop-filter:blur(8px);font:11px/1.4 var(--mono,monospace);touch-action:manipulation}
+.encounter-play{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0 0;padding:15px 16px;min-height:50px;border:1px solid #8d9c8e55;background:#18201e;color:#dae5d5;font:10px/1.5 var(--mono,monospace);letter-spacing:.08em;text-align:left;cursor:pointer;touch-action:manipulation}.encounter-play:hover{background:#293b32;border-color:#becfba}.encounter-play:focus-visible{outline:2px solid var(--acid,#cbdfaa);outline-offset:3px}.encounter-play span{font-size:17px}

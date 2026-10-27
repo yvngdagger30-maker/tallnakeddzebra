@@ -1,0 +1,21 @@
+{
+  "shared": "Use case: stylized-concept. Asset type: photoreal character animation sprite sheet for a fullscreen horror encounter. EXACTLY EIGHT frames in a strict FOUR COLUMNS by TWO ROWS equal-cell grid, read left to right top row then bottom row. SAME adult character, SAME costume and SAME lighting in every frame; FRONT three-quarter view toward the camera. Waist-up figure fully contained within EVERY individual cell, generous empty margins even for the weapon. Torso center and pelvis baseline fixed in every cell. The arms, shoulders, head and weapon must actually CHANGE POSE through the sequence; do not duplicate the same image. Crisp realistic practical-costume textures, cinematic photographed appearance, anatomically coherent hands and joints. Each figure isolated on genuinely TRANSPARENT background; no scenery, no floor, no text, no borders, no shadows outside figures. Consistent silhouette scale across eight cells. ",
+  "descriptions": [
+    {
+      "id": "jason",
+      "p": "Reference image supplies character identity and materials: cracked black hockey mask with green cable points, ragged dark coat and blank badges, gloved hand and one machete. Cold blue rim light. Frames: 1 staring with machete low at hip; 2 head turns slightly and right shoulder winds back; 3 right elbow bends and machete rises above shoulder; 4 shoulder at peak wind-up with machete overhead; 5 torso rotates and right arm starts a diagonal downward strike; 6 right arm and machete fully extended diagonally across the front of the body toward camera; 7 full follow-through low on opposite side, coat swinging; 8 body straightens and mask looks directly at viewer with machete lowered. One weapon attached to same hand throughout. No blood or injury."
+    },
+    {
+      "id": "freddy",
+      "p": "Reference supplies character identity: distressed brown fedora, scarred practical prosthetic face, red-black knit sweater with clock detail, ornate leather glove with FOUR metal clock-hand blades on right hand. Warm furnace side light. Frames: 1 glove low and menacing smile; 2 elbow raises and gloved fingers spread; 3 wrist flexes with claws facing camera; 4 shoulder coils and glove drawn back close to cheek; 5 shoulder rotates and bladed hand begins sweeping horizontally; 6 right arm fully extends and claws rake toward camera; 7 arm follows through across body to opposite side; 8 retracting glove with head tilted and smile. Hand, fingers and face actually articulate, four blades remain attached to fingers. No extra fingers, no wounds."
+    },
+    {
+      "id": "myers",
+      "p": "Reference supplies identity: cracked ivory mask, dark hair, navy coveralls overlapped with small reflective city panes, right hand gripping single kitchen knife. Low neutral moonlight with warm right rim. Frames: 1 unnervingly still with knife low; 2 head tilts slightly; 3 body leans forward and knife elbow bends; 4 right elbow rises, knife held high beside head; 5 shoulder and upper arm start driving knife downward toward viewer; 6 knife and right hand extend fully toward the camera with physical foreshortening; 7 arm follows through low and body leans into action; 8 shoulders settle, mask facing camera and knife down. Knife connected to same hand; realistic continuous anatomy. No graphic injury."
+    },
+    {
+      "id": "creeper",
+      "p": "Reference supplies identity: adult reptilian practical creature face, ragged broad-brim hat, brown tattered coat with rusted plates and vines, TWO attached leathery wings and clawed hands. Cold moonlight highlights. Frames: 1 hunched, wings folded, jaw closed; 2 shoulders rise, wings half-open; 3 wings raised wide, jaw opening; 4 wings push down, torso leans forward and hands reach; 5 body surges forward, wings half-fold and jaw snarls; 6 right taloned hand fully extended toward lens with foreshortening, jaws open; 7 wings sweep forward around shoulders and both hands claw inward; 8 wings folded close like a dark cloak around the creature, face staring straight at camera. Distinct articulated wing and talon poses, same size creature each cell, no extra wings, no gore."
+    }
+  ]
+}
