@@ -40,7 +40,7 @@
  function human(x,y,scale,id,phase,fall=0,npc=false){
  if(npc&&scenery.bystanders.complete&&scenery.bystanders.naturalWidth){
   const image=scenery.bystanders,row=id%2,cycle=[0,1,2,1],f=cycle[Math.floor(phase*5)%4]+row*3;
-  c.save();c.translate(x,y);if(fall)c.rotate(Math.min(1,fall)*1.45);paintFrame(image,'bystanders',f,0,0,120*scale);c.restore();return;
+  c.save();c.translate(x,y);if(fall)c.rotate(Math.min(1,fall)*1.45);paintFrame(image,'bystanders',f,0,0,150*scale);c.restore();return;
  }
  if(!npc&&sprites[id].complete&&sprites[id].naturalWidth){
   const image=sprites[id],progress=attackClock>0?1-attackClock/attackDuration:0,cycle=[0,1,2,1],clock=runClock*7,index=Math.floor(clock)%4;
