@@ -48,3 +48,6 @@ scare-scenes.js replaces moving-portrait scares with original layered vector enc
 
 ## Expanded interference lab
 Four live looks (Dead channel, Heat signature, Submerged, X-ray), RGB fracture and scan-line depth controls, tracking sweep, scratches, freeze/resume, original comparison, and pointer inspection light. Mutate randomizes the new controls; Reset restores all controls. Reduced-motion remains respected. Everything renders locally using the existing image; no camera, uploads or external requests.
+
+## Directional haunted scrolling
+Native scrolling now adds a small velocity-based drag and tilt, settling when scrolling stops. Crossing into a section triggers a direction-aware shadow/blood smear and a short section arrival. No scroll snapping, wheel interception, forced navigation, or focus changes. Motion off and system reduced-motion cancel all effects immediately. The sweep never intercepts clicks; the animated drag loop stops at rest.
