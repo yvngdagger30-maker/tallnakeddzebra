@@ -1,3 +1,9 @@
+## Game pacing and artwork update
+
+Police start well behind the character. Starting speed is 190 px/s (previously 292); speed caps at 255. Encounters use one spaced queue instead of overlapping independent spawners. Jump airtime is about 1.24 seconds before a second jump; attacks last 0.82 seconds, with a 0.53-second active window, increased reach and a 0.24-second input buffer. The simulation uses fixed 120 Hz updates. Feet are registered per sprite frame; run poses use a ping-pong loop with short crossfades, plus eased crouch and landing response.
+
+Generated detailed transparent police sedan, adult bystander walk atlas, and weathered barricade/chain-hook artwork replace the simple gameplay shapes. Original character images are preserved. Assets: `assets/pursuit-patrol.webp`, `assets/pursuit-bystanders.webp`, `assets/pursuit-road-props.webp`; `pursuit-atlas.js` records source rectangles and foot pivots. Built-in image generation prompts requested realistic painted cinematic side-view assets, transparent backgrounds, consistent walk poses, moonlit material detail and no pixel art.
+
 Four generated six-pose painted character atlases (`assets/*-runner.webp`) animate running and signature attacks. The engine uses a 3×2 atlas and retains vector fallbacks while art loads.
 
 # Current release: Midnight Pursuit + cinematic encounters
