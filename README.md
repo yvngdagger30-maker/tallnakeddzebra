@@ -1,3 +1,15 @@
+Four generated six-pose painted character atlases (`assets/*-runner.webp`) animate running and signature attacks. The engine uses a 3×2 atlas and retains vector fallbacks while art loads.
+
+# Current release: Midnight Pursuit + cinematic encounters
+
+The portfolio now uses generated photographic character encounter plates with separate foreground effects (Jason: machete and glass; Freddy: claws and cuts; Myers: opening door, power cuts and knife; Creeper: wings, dust and talon shadows). These are still-image compositions with animated layers, not recorded live-action video. The legacy vector scenes remain as a prior implementation, while cinematic-scares.js supplies the active controller.
+
+Last Light is now Midnight Pursuit: a smooth illustrated side-scrolling slasher chase on a painted industrial street. Four playable characters use individual attack range/cooldown/weapon animations. Adult NPCs react to attacks and fall without graphic injury. Two police cars replace the monster; the pursuit gauge increases from collisions, decreases with signal pickups, and ends in capture or escape at 1,600 metres. Keyboard: Space/Up jump, X/J attack, Down duck, P pause. Touch buttons and local best distance are included.
+
+Image generation: built-in image tool. Character references: existing assets/{jason,freddy,myers,creeper}-rewired.webp. Prompt set: photoreal 35mm practical-effects-style lake/machete encounter; boiler room/claw foreground encounter; white-mask suburban doorway encounter; winged rural-road creature encounter. Preserve portfolio costume cues, landscape framing, no text or graphic injury. The town backdrop uses a wide empty wet industrial street, moonlit warehouses, fog and rust-red distant illumination. Assets saved in assets/{jason,freddy,myers,creeper}-encounter.webp and assets/pursuit-town.webp.
+
+---
+
 # Don Gray — Beautifully Disturbing
 
 A responsive horror-art portfolio for Don Gray, combining graphic design, computer science, and engineering interests. Built with semantic HTML, CSS, and vanilla JavaScript.
