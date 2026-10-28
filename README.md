@@ -94,3 +94,6 @@ New exhibition.css and exhibition.js create a cinematic split-image opening, int
 - Social preview metadata and an explicit commission inquiry invitation. No payments or external analytics added.
 - Validation: pursuit.test.cjs, pursuit-records.test.cjs, next-chapter.test.cjs, action-scares.test.cjs; desktop and 390px browser layout review.
 - Next proposed step after review: distinct character mechanics and animation polish, followed by an original signature monster.
+
+## Midnight Pursuit — The Second Cut (2026-10-28)
+Gameplay release: four rechargeable Q/touch powers (barricade smash, slow time / fast claws, obstacle phasing / bonus strike, flight / aerial dive); three district environments with progressively closer encounter spacing; five-hit streak bonuses, clean-pass and signal rewards; attack trails, impact pauses, lunge and larger registered actors. Background camera drift no longer snaps at its repeat boundary. Three-hit health, crash slowdown, two police cars, silent output and result sharing retained. Power/physics/streak/collision tests pass; keyboard power and 390px controls verified in browser. Uses the existing painted character art.
