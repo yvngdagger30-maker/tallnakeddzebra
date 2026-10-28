@@ -1,0 +1,12 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict'),rules=require('./pursuit-records');
+(async()=>{const nodes={},events={},store={};let downloaded=false,shared='',blobbed=false;
+const el=id=>nodes[id]??={value:id==='runner-character'?'0':'',hidden:false,textContent:'',children:[],events:{},addEventListener(n,f){this.events[n]=f},append(...c){this.children.push(...c)},replaceChildren(...c){this.children=c},focus(){},select(){},click(){if(this.events.click)return this.events.click();downloaded=true}};
+const context={fillRect(){},strokeRect(){},fillText(){}};
+const doc={getElementById:el,createElement:tag=>tag==='canvas'?{getContext:()=>context,toBlob:f=>{blobbed=true;f({})}}:el('generated-'+Math.random())};
+const sandbox={window:{DGPursuitRecords:rules,addEventListener:(n,f)=>events[n]=f},document:doc,localStorage:{getItem:k=>store[k]||null,setItem:(k,v)=>store[k]=v},navigator:{clipboard:{writeText:async text=>{shared=text}}},URL:{createObjectURL:()=>'/blob/result',revokeObjectURL(){}},setTimeout:f=>f()};
+vm.runInNewContext(fs.readFileSync('next-chapter.js','utf8'),sandbox);
+const run={won:true,character:0,name:'JASON / THE ANONYMOUS',points:100,distance:1600,seconds:65,health:2,damageTaken:1,takedowns:1,attacks:2,successfulAttacks:1};events['pursuit:finish']({detail:run});assert.equal(el('run-report').hidden,false);assert.equal(el('report-stats').children[5].children[1].textContent,'50%');assert(store['dg-pursuit-records-v1']);
+await el('report-share').events.click();assert(shared.includes('100 points'));assert(shared.includes('https://tallnakeddzebra.uk/#projects'));el('report-download').events.click();assert(blobbed&&downloaded);
+sandbox.navigator.clipboard.writeText=async()=>{throw Error('denied')};await el('report-share').events.click();assert.equal(el('report-copy-wrap').hidden,false);assert(el('report-copy').value.includes('JASON'));
+el('runner-character').value='1';el('runner-character').events.change();assert(el('pursuit-records').textContent.includes('0 PTS'));events['pursuit:start']();assert.equal(el('run-report').hidden,true);
+console.log('PASS: results render, accuracy, storage, character isolation, copy sharing, denied clipboard fallback, PNG creation and restart cleanup');})();

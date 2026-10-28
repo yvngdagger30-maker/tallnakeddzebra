@@ -86,3 +86,11 @@ Native scrolling now adds a small velocity-based drag and tilt, settling when sc
 Original redesign informed by studying Light in the Darkness (https://www.lightinthedarkness.it/), the Awwwards listing for Best Horror Scenes (https://www.awwwards.com/sites/best-horror-scenes), and The Cursed Library case study (https://www.awwwards.com/the-cursed-library.html). Reference principles: layered perception, typography-led exhibition pacing, and a coherent journey. No third-party artwork, code or brand elements were copied.
 
 New exhibition.css and exhibition.js create a cinematic split-image opening, interactive Reality/Nightmare color perception, pointer light/parallax, a readable prologue, large editorial case studies, a horizontally scrollable character filmstrip with buttons and keyboard navigation, a full-screen chapter index with artwork previews, chapter progress rail, and always-available motion/scare/sound settings. All existing art case files, character stories/encounters, game, lab, contact links and reduced-motion controls remain. Previous release is preserved on backup/before-cinematic-revamp-1ca9fc2. No new dependencies or external assets.
+
+## Chapter one — entrances and replay records (2026-10-28)
+- Direct homepage paths to exhibition, Midnight Pursuit and commission inquiries; game visible in desktop navigation.
+- Per-character browser-local score, distance, escape count and fastest successful run. Case-file results with attack accuracy, health, takedowns and S/A/B escape ranks.
+- Native share / copy fallback and downloadable 1200×630 PNG score card. Sharing requires a visitor action.
+- Social preview metadata and an explicit commission inquiry invitation. No payments or external analytics added.
+- Validation: pursuit.test.cjs, pursuit-records.test.cjs, next-chapter.test.cjs, action-scares.test.cjs; desktop and 390px browser layout review.
+- Next proposed step after review: distinct character mechanics and animation polish, followed by an original signature monster.
