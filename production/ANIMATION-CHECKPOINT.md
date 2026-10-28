@@ -1,3 +1,11 @@
+# Release completion note
+
+The user resumed this work and explicitly requested publication. All previously saved changes are included in the completed release. Additional visual fixes added matching lower-body art to prevent distant torso cutoffs and kept portrait compositions full-height. Scares remain completely silent.
+
+Final checks passed: both Node test suites; local asset/atlas bounds; image decoding; absence of audio APIs in loaded scripts; browser compositions for all four scenes; keyboard replay and Escape; motion-off gate; 390×844 portrait game controls and pause. Physical-device testing remains outside this session. The historical checkpoint below is retained as implementation history; its save-only status no longer applies.
+
+---
+
 # Saved checkpoint: silent action scares and game health
 
 Saved October 27, 2026. USER REQUESTED SAVE ONLY AND FINISH LATER. Do not publish this checkpoint without resuming the requested completion work. The live site remains on the prior tested game-polish release.

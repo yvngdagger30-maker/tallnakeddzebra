@@ -1,6 +1,14 @@
-## Unpublished checkpoint — silent animated encounters and three-hit game health
+# Current release — silent animated encounters and three-hit health
 
-The user requested saving and finishing later. See `production/ANIMATION-CHECKPOINT.md` for implemented changes, validation, remaining visual review and exact publication steps. This branch is not the current live release. All new jumpscares are silent; no audio control or playback script is loaded.
+Jason, Freddy, Myers and the Creeper each have a photographic eight-pose canvas animation, their own environment and attack timing, atmospheric depth, recoil and impact effects. Lower-body cutouts complete distant compositions. Hover a portrait or use PLAY ENCOUNTER; Escape or Close dismisses it. All encounters are completely silent. No audio API, sound control, or playback script is loaded. These are illustrated photographic-pose animations, not generated live-action footage.
+
+Midnight Pursuit now has three health segments. Obstacles remove one segment, cancel boosts and slow the player to 64% pace for 2.1 seconds; a collision grace interval prevents a single hit draining multiple segments. The third hit ends the run. Each takedown gives 100 points and a 2.8-second +28% speed boost. Health and pace are visible above the canvas and in its HUD. Restart resets health, points and effects.
+
+Validation: action-scares.test.cjs and pursuit.test.cjs cover pose sequences, lifecycle cleanup, silence, loading fallback, portrait sizing, motion guard, attacks, jumping, collision grace, health, scoring, boosts, slowdown and reset. Browser review included four scene compositions, launch/dismissal, motion off and 390×844 portrait controls. Production excludes the internal review pages and notes under production/.
+
+New optimized assets are assets/action-{jason,freddy,myers,creeper,environments,lower-bodies}.webp. Built-in image generation supplied realistic costume pose sheets, empty cinematic environment plates, and matching waist-to-feet cutouts. The original four character references and prompt set are recorded in production/action-image-prompts.json; the additional lower-body brief specified four consistent front-view costume cutouts (black cargo trousers, brown work trousers, navy coveralls, and ragged creature legs), true transparency, matched lighting and no scenery/text. action-atlas.js records the source bounds and anchors.
+
+---
 
 ## Game pacing and artwork update
 
@@ -10,7 +18,7 @@ Generated detailed transparent police sedan, adult bystander walk atlas, and wea
 
 Four generated six-pose painted character atlases (`assets/*-runner.webp`) animate running and signature attacks. The engine uses a 3×2 atlas and retains vector fallbacks while art loads.
 
-# Current release: Midnight Pursuit + cinematic encounters
+# Prior release: Midnight Pursuit + cinematic encounters
 
 The portfolio now uses generated photographic character encounter plates with separate foreground effects (Jason: machete and glass; Freddy: claws and cuts; Myers: opening door, power cuts and knife; Creeper: wings, dust and talon shadows). These are still-image compositions with animated layers, not recorded live-action video. The legacy vector scenes remain as a prior implementation, while cinematic-scares.js supplies the active controller.
 
